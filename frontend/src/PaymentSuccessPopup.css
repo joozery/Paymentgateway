@@ -38,3 +38,23 @@
     font-size: 16px;
     color: #333;
 }
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .modal, .qr-page {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .amount-buttons {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    .generate-button, .download-button, .payment-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }

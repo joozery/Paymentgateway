@@ -131,23 +131,44 @@ body {
   color: #666;
   margin-top: 10px;
 }
+
 .payment-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    width: 100%;
-    max-width: 250px;
-    display: block;
-    margin: 10px auto;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 10px auto;
+}
+
+.payment-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .modal, .qr-page {
+    width: 90%;
+    padding: 15px;
   }
-  
-  .payment-button:hover {
-    background-color: #218838;
+
+  .amount-buttons {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
+
+  .input-field {
+    font-size: 14px;
+  }
+
+  .generate-button, .download-button, .payment-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
