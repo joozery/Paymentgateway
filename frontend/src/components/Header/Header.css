@@ -1,0 +1,104 @@
+.header {
+    background: linear-gradient(135deg, #0b1015, #073258);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ข้อมูลผู้ใช้ */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+/* ไอคอนโปรไฟล์ */
+.user-icon {
+    font-size: 26px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.language-switch:hover {
+    color: #f1c40f;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.lang-icon {
+    font-size: 18px;
+    color: #2980b9;
+}
+.lang-btn:hover {
+    background: #ecf0f1;
+}
+/* ปุ่มเปลี่ยนภาษา */
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+/* เมนูดรอปดาวน์ */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: white;
+    color: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 160px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+/* ไอคอนโปรไฟล์ */
+.user-icon {
+    font-size: 26px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.user-icon:hover {
+    color: #f1c40f; /* สีทอง */
+}
+/* ไอคอนโปรไฟล์ */
+.user-icon {
+    font-size: 26px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.user-icon:hover {
+    color: #f1c40f; /* สีทอง */
+}

@@ -1,0 +1,124 @@
+/* LoginDashboard.css - ปรับสีให้ดูสวยงามและทันสมัย */
+
+/* ตั้งค่าพื้นฐานของ body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f0f2;
+  }
+  
+  /* จัดหน้า login ให้เต็มหน้าจอ */
+  .login-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* ส่วนซ้าย - ฟอร์ม Login */
+  .login-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+    padding: 50px;
+  }
+  
+  .login-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* ช่องกรอกข้อมูล */
+  .input-container {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #b0c4de;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  /* ปุ่ม Google Auth */
+  .auth-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .auth-input {
+    flex: 1;
+  }
+  
+  .auth-button {
+    background-color: #151211;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s;
+  }
+  
+  .auth-button:hover {
+    background-color: #e35d3f;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    width: 100%;
+    max-width: 350px;
+    padding: 14px;
+    border: 1px solid #b0c4de;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  /* ปุ่ม Login */
+  .login-button {
+    width: 100%;
+    max-width: 350px;
+    padding: 14px;
+    background-color: #030202;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #341010;
+  }
+  
+  /* ส่วนขวา - พื้นหลังโลโก้ */
+  .login-logo {
+    width: 50%;
+    background-color: #0c0101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }

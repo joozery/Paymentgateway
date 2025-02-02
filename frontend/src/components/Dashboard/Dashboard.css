@@ -1,0 +1,44 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100vw; /* ทำให้เต็มหน้าจอ */
+    overflow: hidden; /* ป้องกันการเลื่อนเกินขอบ */
+}
+
+.sidebar {
+    width: 250px; /* คงที่ */
+    min-width: 250px; /* ป้องกันการบีบ */
+    background-color: #2c3e50; /* เปลี่ยนสีตามธีม */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* ให้ Sidebar อยู่ซ้ายสุดตลอด */
+    height: 100vh; /* ให้สูงเต็มจอ */
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.content-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf0f1; /* สีพื้นหลัง */
+    margin-left: 250px; /* เว้นที่ให้ Sidebar */
+    width: calc(100vw - 250px); /* ลดขนาดตาม Sidebar */
+    overflow-y: auto; /* ถ้าหน้าจอยาวให้เลื่อนได้ */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

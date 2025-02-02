@@ -1,0 +1,254 @@
+.main-content {
+    font-family: "Prompt", sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .summary-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .summary-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .summary-card h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .summary-amount {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .icon-up {
+    color: #2ecc71;
+    margin-left: 5px;
+  }
+  
+  .icon-down {
+    color: #e74c3c;
+    margin-left: 5px;
+  }
+  
+  .balance-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .balance-card,
+  .wallet-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .balance-card:hover,
+  .wallet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .balance-card h3 {
+    margin: 0;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .balance-amount {
+    font-size: 2rem;
+    color: #34495e;
+    margin-top: 10px;
+  }
+  
+  .card-details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .progress-bar {
+    margin-top: 20px;
+    height: 5px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    border-radius: 5px;
+  }
+  
+  .wallet-balance {
+    font-size: 1.8rem;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .wallet-note {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .wallet-buttons .btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .wallet-buttons .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .send-btn {
+    background: #328454;
+  }
+  
+  .send-btn:hover {
+    background: #27ae60;
+  }
+  
+  .transfer-btn {
+    background: #073258;
+  }
+  
+  .transfer-btn:hover {
+    background: #2980b9;
+  }
+  
+  .graph-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-section h2 {
+    margin-bottom: 20px;
+    color: #34495e;
+    font-weight: bold;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ecf0f1;
+    color: #34495e;
+    cursor: pointer;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tabs button.active-tab {
+    background: #3498db;
+    color: #fff;
+  }
+  
+  .tabs button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .notification-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-section h3 {
+    margin: 0 0 10px;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .notifications {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .notifications li {
+    margin-bottom: 5px;
+  }
+  
+  /* ไอคอนทั่วไป */
+.icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+    color: #34495e; /* สีเทาเข้ม */
+  }
+  
+  /* ไอคอนสำหรับยอดเพิ่มขึ้น */
+  .icon-up {
+    color: #2ecc71; /* สีเขียว */
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+  
+  /* ไอคอนสำหรับยอดลดลง */
+  .icon-down {
+    color: #e74c3c; /* สีแดง */
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+  
+  /* ไอคอนกระเป๋าเงิน */
+  .wallet-icon {
+    font-size: 2rem;
+    color: #f39c12; /* สีเหลือง */
+    margin-right: 10px;
+  }
+  
+  /* ไอคอนแจ้งเตือน */
+  .notification-section h3 svg {
+    color: #e67e22; /* สีส้ม */
+    margin-left: 10px;
+  }
+  

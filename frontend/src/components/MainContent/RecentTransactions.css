@@ -1,0 +1,21 @@
+.transaction-details {
+    margin-top: 40px;
+}
+
+.transaction-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-details li {
+    padding: 10px;
+    background: #ecf0f1;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-details li span {
+    font-weight: bold;
+}

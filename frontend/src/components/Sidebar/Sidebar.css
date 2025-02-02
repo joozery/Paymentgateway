@@ -1,0 +1,134 @@
+/* ปรับ sidebar เพื่อให้เมนูอยู่ด้านซ้ายและออกแบบให้สวยงาม */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: linear-gradient(135deg, #0b1015, #073258);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* จัดเนื้อหาให้อยู่ด้านบน */
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    font-size: 2px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.logo-img {
+    width: 65px; /* ✅ ปรับขนาดโลโก้ */
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-icon {
+    font-size: 28px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding-top: 20px; /* เพิ่มระยะห่างด้านบนให้กับเมนู */
+    flex-grow: 1; /* ให้เมนูขยายเต็มพื้นที่ */
+    
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    padding: 14px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: rgba(163, 143, 143, 0.1);
+    transform: scale(1.05);
+}
+
+.menu-item .icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover .icon {
+    transform: rotate(10deg);
+}
+
+/* เพิ่มลักษณะสำหรับ User Profile */
+.menu-item.profile {
+    background: #34495e; /* ให้สีต่างจากเมนูอื่น */
+}
+
+.menu-item.profile:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: auto; /* ให้ footer ไปอยู่ด้านล่าง */
+}
+
+.download-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 12px;
+}
+
+.download-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-item {
+        justify-content: center;
+    }
+
+    .menu-item span {
+        display: none;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .footer {
+        display: none;
+    }
+}
